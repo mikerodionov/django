@@ -16,8 +16,3 @@
  python manage.py migrate
  #Start local server for initial check
  python manage.py runserver
- 
- #Configure Django project for EB
- pip freeze > requirements.txt / clean up
- mkdir .ebextensions
- nano .ebextensions/django.config
