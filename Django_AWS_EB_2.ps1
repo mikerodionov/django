@@ -14,10 +14,10 @@ nano .ebextensions/django.config
 deactivate
 #Install awsebcli
 sudo pip3 install awsebcli
-#Initialize EB environment
+#Initialize/create EB app
 eb init -p python-3.6 django-test-app 
-#Create EB app
-eb create django-test-app
+#Create EB environment
+eb create django-test-env
 #Show EB app status to get CNAME
 eb status
 #Edit settings.py to add CNAME into ALLOWED_HOSTS and STATIC_ROOT = 'static' 
